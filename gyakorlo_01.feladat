@@ -1,0 +1,20 @@
+Gyakorló feladat (05.07):
+1. char[] használata
+
+Hozzunk létre 25 elemű karaktertömböt. 
+A standard bemenetről olvassuk karaktereit addig és eltároljuk őket, amíg:
+- üres bemenetet nem kapunk, vagy
+- a tömb betelne: ilyenkor a túlhosszú részt levágjuk.
+
+2. egészeket tároló "okos" tömb megírása
+
+Hozzunk létre egy struktúrát, ami egész számok tárolására alkalmas!
+Mindig annyi helyet foglaljunk, amennyit csak éppen szükséges.
+A tároló ne legyen 50 elemnél nagyobb méretű.
+Ezen felül, rendelkezzen a struktúra az alábbi tagfüggvényekkel:
+- addAll(): visszaadja a tárolt elemek összegét;
+- stringify(): egymás után fűzi a tárolt számokat és visszaadja szövegként;
+- copy(): lemásolja a tároló tartalmát és visszaad az új tömbre egy mutatót.
+
+Mindig szabadítsuk fel a nem használt memóriát, illetve a mutatókat állítsuk 0-ra!
+
