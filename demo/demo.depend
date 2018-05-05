@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1525286599 source:c:\gergõ\demo\main.c
+	<stdio.h>
+	<stdlib.h>
+	"demo.h"
+
+1525286540 c:\gergõ\demo\demo.h
+
