@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1527343164 source:d:\gergõ\2_oop\src\szam.cpp
+
+1527343142 d:\gergõ\2_oop\include\szam.h
+	<iostream>
+
+1527342963 source:d:\gergõ\2_oop\main.cpp
+	<iostream>
+	"komplex.h"
+	"komplex2.h"
+
+1527342495 d:\gergõ\2_oop\komplex.h
+
+1527343077 d:\gergõ\2_oop\komplex2.h
+	<math.h>
+	"Szam.h"
+
