@@ -9,4 +9,5 @@ Eddigi anyag:
   0. C program írása, szerkezete, primitív típusai és alapkoncepciói.
 <ol>
 <li>C++ program írása: tömb, mutató, felsorolt típus, stream, bool, dinamikus memóriakezelés.
+<li>Objektumorientált programozás alapjai: osztályok, láthatóság, öröklés, polimorfizmus, függvénytúlterhelés.
 </ol>

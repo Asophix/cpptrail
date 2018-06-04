@@ -37,14 +37,14 @@ int main()
 	// Elemeit [] operátorral érhetjük el.
 
     for (int i = 0; i < 6; i++) cout << szoveg[i];
-	
+
 	// Minden változónak van egy eleve elfoglalt helye a memóriában, ahogy az példányt kap (referencia).
 	// Ezt egy 16-os rendszerben írt címmel érjük el, az & operátorral.
     cout << endl << "Address:" << &szoveg << endl;
-	
+
 	//==================================
 
-	// Pointer: címre mutató típusos változó, ami nem kap kezdõértéket. 
+	// Pointer: címre mutató típusos változó, ami nem kap kezdõértéket.
 	// Segítségével könnyû a változóinkat helytakarékosan kezelni és megváltoztatni.
 	// Egy mutató mutathat konkrét címre, vagy pedig sehova (nullpointer).
 	// Szintaktikája: [típus]* [név];
@@ -53,10 +53,10 @@ int main()
 	// - mutatott érték dereferáló operátorral: *ptr = 65;
 	// A fenti két utasítás esetén int* pointerrel dolgoztunk.
 
-	// Példa karakter típusú pointer használatára (ami a string is): 
+	// Példa karakter típusú pointer használatára (ami a string is):
     char* text;
-	
-	// Mutatóval lehet helyet foglalni a memóriában. 
+
+	// Mutatóval lehet helyet foglalni a memóriában.
 	// new[] operátor: dinamikus tömböt definiál.
     text = new char[2];
     text[0] = 'e';
@@ -66,24 +66,24 @@ int main()
 	// - 1. létrehozunk egy ideiglenes tárolót
     char* temp;
     temp = new char[3];
-	
+
 	// - 2. átmásoljuk a meglévõ szöveget
     for (int i = 0; i < 2; i++) temp[i] = text[i];
-	
+
 	// - 3. plusz karaktereket beleírjuk
     temp[2] = 'h';
-	
+
 	// - 4. mivel az eredeti szöveg már nem kell, ezért annak helyét felszabadítjuk (más program használhassa)
 	// delete[] operátor: felszabadítja a változóhoz rendelt memóriát.
     delete[] text;
 
 	// - 5. eredeti szövegnek odaadjuk a dummy változó referenciáját
     text = temp;
-	
+
 	// - 6. a dummy változó pointerjét eltereljük, kinullázzuk
     temp = 0; //null pointer
-	
-	
+
+
 	// Tömb esetén a pointer mindig a kezdetre mutat.
 	// Ha +1-et adunk hozzá a pointerhez, a következõ foglalt elemre tudunk hivatkozni.
 	// Ellentétes módon, -1-gyel elõrébb lépünk a memóriában.
@@ -91,33 +91,30 @@ int main()
         cout << "Letter:" << *text << endl;
         text = text + 1;
     }
-	
+
 	// Struktúra: olyan szerkezetleírás, melynek neve van, továbbá lehetnek változói és függvényei (C-ben is van).
 	// Miután példányosodott, függvényei és mezõi bárhonnan elérhetõk.
-	
     struct Doboz{
-        char* nev;
-        int tomeg;
+        char* nev = "Kispista";
+        int tomeg = 88;
         void kiir() {cout << "Nev: " << nev << endl << "Tomeg: " << tomeg << endl; }
     };
-	
+
 	// Létrehozunk két dobozt, az egyiket pointerrel. A nem mutatóst felparaméterezzük.
     Doboz d;
     Doboz* e;
 
 	// . operátor: objektum tagelemei így érhetõk el
-    d.nev = "Kispista";
-    d.tomeg = 88;
     d.kiir();
 
 	// A második doboz mutatója az elsõre fog mutatni.
     e = &d;
-	
+
 	// Kiíratjuk a hivatkozott doboz tömegét.
 	// -> operátor: pointer tagelemei így érhetõk el.
     cout << e->tomeg << endl;
 
-	
+
 	// Felsorolt típus - enumeráció - állapotgép: állapotokat tartalmazó leírás. Számmal is helyettesíthetõ.
 	// Ha nem adunk értéket az állapotnak, mindig 1-gyel többet kap, mint az elõzõ.
     enum Hitetlen {
@@ -134,12 +131,12 @@ int main()
 	// Tipikusan menüpontok közti navigációt, vagy játékosok körének figyelését enummal szokás megoldani.
     switch (h) {
     case megtert:
-        cout << "I'm fukin gud" << endl;
+        cout << "I'm the zealot of oath" << endl;
         break;
     case eretnek:
-        cout << "allahu akbar" << endl;
+        cout << "I deny my religion" << endl;
         break;
     }
-	
+
     return 0;
 }
