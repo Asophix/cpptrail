@@ -3,6 +3,8 @@
 
 using namespace std;
 
+//Komplex osztály.
+//Önmagában is komplex számot tároló osztály, nem OOP-elven megvalósított objektum.
 struct Komplex {
     double re = 0;
     int im = 0;

@@ -4,8 +4,13 @@
 #include <iostream>
 using namespace std;
 
+//Szam osztály.
+//Egész szám tárolására és alapmûveleteire képes objektum.
+
 class Szam
 {
+    //Protected kulcsszóval elérhetõvé tesszük a belsõ változót a konkrétabb számoknak.
+    //C++ privát szembemegy az UML priváttal! (UML-ben gyerek eléri a privát változót is)
     protected:
         double re = 0;
 
@@ -16,6 +21,12 @@ class Szam
             this->re = re;
         }
 
+        //Amikor általános típust adunk meg, figyelni kell arra, hogy a gyerek típus
+        //is fel legyen készítve:
+        //Néhány alapeset:
+        // - rendelkezzen látható függvénnyel és változóval
+        // - képes legyen megfelelõ operátorok használatára
+        // - esetleges const objektum kezelése legyen megoldva
         Szam add(Szam rhs) {
             Szam result;
             result = this->re + rhs.re;

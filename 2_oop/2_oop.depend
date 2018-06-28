@@ -15,3 +15,25 @@
 	<math.h>
 	"Szam.h"
 
+1527343164 source:d:\cpptrail\cpptrail\2_oop\src\szam.cpp
+
+1530222915 source:d:\cpptrail\cpptrail\2_oop\main.cpp
+	<iostream>
+	"komplex.h"
+	"komplex2.h"
+	"Szam.h"
+	"calc.h"
+
+1527342495 d:\cpptrail\cpptrail\2_oop\komplex.h
+
+1527343569 d:\cpptrail\cpptrail\2_oop\komplex2.h
+	<math.h>
+	"Szam.h"
+
+1527343142 d:\cpptrail\cpptrail\2_oop\include\szam.h
+	<iostream>
+
+1527344602 d:\cpptrail\cpptrail\2_oop\calc.h
+	<iostream>
+	"Szam.h"
+
