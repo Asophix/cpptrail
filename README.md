@@ -10,4 +10,5 @@ Eddigi anyag:
 <ol>
 <li>C++ program írása: tömb, mutató, felsorolt típus, stream, bool, dinamikus memóriakezelés.
 <li>Objektumorientált programozás alapjai: osztályok, láthatóság, öröklés, polimorfizmus, függvénytúlterhelés.
+<li>???
 </ol>
